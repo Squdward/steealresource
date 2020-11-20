@@ -1,0 +1,96 @@
+.gost,
+.sort
+    &_wrap
+        display: flex
+        flex-wrap: wrap
+        margin-top: 70px
+        margin-bottom: 120px
+    &_standart
+        position: relative
+        font-size: 18px
+        margin-bottom: 60px
+        margin-right: 65px
+        &::before
+            content: ""
+            width: 58px
+            height: 32px
+            border-radius: 23px
+            background-color: #E5F3F7
+            position: absolute
+            left: -20px
+            transform: rotate(45deg)
+            z-index: -1
+    & .sample-title
+        margin-bottom: 70px
+  
+    &_list
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: 120px
+    &_item
+        border-radius: 17px
+        background-color: #F1F4F4
+        padding: 37px
+        font-size: 14px
+        font-weight: 400
+        color: $black
+        margin-bottom: 30px
+        width: calc( 33.3333333333% - 30px)
+        margin-right: auto
+    &_text
+        border-bottom: 1px solid #B3B3B3
+        position: relative
+        padding-left: 37px
+        &::before
+            content: "\e909"
+            font-family: 'SteelResource' !important
+            font-size: 27px
+            color: #ff7867
+            position: absolute
+            left: 0
+            top: -2px 
+    &_number
+        margin-bottom: 8px
+    &_name
+        margin-bottom: 20px
+        line-height: 22px
+    &_load
+        width: 100%
+        height: 50px
+        display: block
+        border-radius: 50px
+        border: 1px solid  #37A5BD
+        text-align: center
+        line-height: 3
+        margin-top: 20px
+        color: #37A5BD
+        font-size: 15px
+        font-weight: 700
+        position: relative
+        overflow: hidden
+        transition: color .3s ease
+        & span
+            position: relative
+            z-index: 99
+        &::before
+            content: ""
+            width: 100%
+            height: 100%
+            position: absolute
+            background-color: #37A5BD
+            left: 0
+            top: 0
+            transform: translateX(-500px)
+            transition: transform .4s ease
+            z-index: 0
+        &:hover
+            color: #ffffff
+            &::before
+                transform: translateX(0)
+
+.sort
+    & .page-title
+        margin-bottom: 70px
+    & .sample_decoration
+        text-align: right
+    

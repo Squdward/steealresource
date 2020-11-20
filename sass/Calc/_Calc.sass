@@ -1,0 +1,100 @@
+.calc
+    & .sample_decoration
+        left: auto
+        overflow: visible
+    & .sample-title
+        margin-bottom: 70px
+    & .sample-description
+        margin-bottom: 120px
+
+.calculator
+    margin-top: 70px
+    border-radius: 35px
+    overflow: hidden
+    padding: 0
+    margin-bottom: 124px
+    &_head
+        display: flex
+        background-color: #E1EBEB
+        padding: 36px
+        width: 100%
+    &_params
+        margin-right: 109px
+        cursor: pointer
+        font-size: 18px
+        color: #000000
+        font-weight: 400
+        &__active
+            font-weight: 700
+    &_body
+        display: flex
+        padding: 60px 50px 60px 70px
+        background: rgba(233, 237, 238, 0.64)
+    &_menu
+        display: flex
+        flex-direction: column
+        padding: 40px
+        background-color: #fff
+        border-radius: 7px
+    &_button
+        width: 0.1px
+        height: 0.1px
+        opacity: 0
+        z-index: -9999999
+        position: relative
+    &_item
+        margin-bottom: 15px
+        & span
+            position: relative
+            &::before,
+            &::after
+                content: ""
+                width:  9px
+                height: 9px
+                display: block
+                border: 1px solid rgba(136, 136, 136, 0.51)
+                z-index: 9999999
+                border-radius: 50%
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: -20px
+            &::after
+                background: transparent
+                border: none
+                width: 5px
+                height: 5px
+                left: -18px
+        & input
+            &:checked
+                & + span::before
+                    border-color: rgba(255, 120, 103, 0.51)
+                & + span::after
+                    background: #FF7867
+    &_wrap
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        min-width: 450px
+    &_value
+        width: 100% 
+        height: 50px
+        border: none
+        background-color: #ffffff
+        border-radius: 30px
+        padding-left: 20px
+        color: rgba($black, 0.5)
+        font-size: 14px
+        font-weight: 400
+        margin-bottom: 20px
+    &_calc
+        width: 100%
+    &_img
+        background-color: #ffffff
+        display: flex
+        align-items: center
+        padding: 0 45px
+        border-radius: 7px
+        & img
+            width: 191px
+            height: 76px

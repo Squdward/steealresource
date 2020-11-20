@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Steel Resourse | Calculator</title>
+    <meta name="description" content="Steel Resourse">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.svg">
+    <meta property="og:image" content="">
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row no-gutters align-items-center">
+				<a href="index.html" class="logo col-lg-2 col-md-3 col-5">
+					<img src="images/dest/logo.png" alt="">
+				</a>
+				<nav class="navigation  col-lg-7 col-xl-6">
+					<ul class="navigation_list">
+						<li>
+							<a href="#" class="navigation_links">Металлопрокат</a>
+						</li>
+						<li>
+							<a href="#" class="navigation_links">Трубы</a>
+						</li>
+						<li>
+							<a href="#" class="navigation_links">Нержавейка</a>
+						</li>
+						<li>
+							<a href="#" class="navigation_links">Оцинковка</a>
+						</li>
+						<li>
+							<a href="#" class="navigation_links">Цветной металл</a>
+						</li>
+					</ul>
+					<ul class="navigation_list navigation_list_mobile">
+						<li>
+							<a href="#" class="navigation_links">Цветной металл</a>
+						</li>
+						<li>
+							<a href="#" class="navigation_links">Услуги</a>
+						</li>
+						<li>
+							<a href="company.html" class="navigation_links">О компании</a>
+						</li>
+						<li>
+							<a href="gost.html" class="navigation_links">ГОСТы и ТУ</a>
+						</li>
+						<li>
+							<a href="#" class="navigation_links">Цветной металл</a>
+						</li>
+					</ul>
+					<ul class="navigation_list navigation_list_mobile">
+						<li>
+							<a href="purchase.html" class="navigation_links">Условия покупки</a>
+						</li>
+						<li>
+							<a href="" class="navigation_links">Оплата</a>
+						</li>
+						<li>
+							<a href="delivery.html" class="navigation_links">Доставка</a>
+						</li>
+						<li>
+							<a href="contact.html" class="navigation_links">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<button class="btn_blue col-lg-2 col-md-6 col-9">Сделать заказ</button>
+				<div class="contact col-lg-2 col-md-2 col-1">
+					<a href="tel:88005008084" class="contact_phone"><i class="icon-call"></i>8 800 500-80-84</a>
+					<a href="mailto:steel@resourse.ru" class="contact_mail"><i
+							class="icon-email"></i>steel@resourse.ru</a>
+				</div>
+				<div class="burger-wrap col-md-1 col-1">
+					<div class="header_burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<nav class="navigation_bottom col-xl-8 col-lg-9">
+				<ul class="navigation_list">
+					<li>
+						<a href="company.html" class="navigation_links">О компании</a>
+					</li>
+					<li>
+						<a href="catalog.html" class="navigation_links">Каталог</a>
+					</li>
+					<li>
+						<a href="#" class="navigation_links">Услуги</a>
+					</li>
+					<li>
+						<a href="production.html" class="navigation_links">Производство</a>
+					</li>
+					<li>
+						<a href="purchase.html" class="navigation_links">Условия покупки</a>
+					</li>
+					<li>
+						<a href="delivery.html" class="navigation_links">Доставка</a>
+					</li>
+					<li>
+						<a href="contact.html" class="navigation_links">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header_search col-lg-3 col-md-6 col-1">
+				<input type="text" class="search" name="search" placeholder="Поиск">
+				<div class="header_loop"><i class="icon-search"></i></div>
+			</div>
+			<div class="search_mobile">
+				<input type="text" class="search" placeholder="Поиск">
+			</div>
+			</div>
+		</div>
+	</header>
+    <section class="calc" id="calc">
+        <div class="container">
+            <div class="row">
+                <div class="sample-wrap sample-wrap__noimage  col-lg-12">
+                    <div class="sample-text">
+                        <div class="breadCrumbs">
+                            <a href="index.html" class="breadCrumbs_parent">Главная</a>/
+                            <a href="calc.html" class="breadCrumbs_child"> Калькулятор металлопроката</a>
+                        </div>
+                        <h3 class="page-title">Калькулятор металлопроката</h3>
+                        <div class="sample_decoration">Steel</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="calculator col-lg-12">
+                    <div class="calculator_head">
+                        <div class="calculator_params calculator_params__active calculator_mass">Масса по длине</div>
+                        <div class="calculator_params calculator_length">Длина по массе</div>
+                    </div>
+                    <div class="calculator_body">
+                        <div class="calculator_menu">
+                            <label class="calculator_item" for="armatura">
+                                <input name="calculator" class="calculator_button" id="armatura" name="" type="radio">
+                                <span>Арматура</span>
+                            </label>
+                            <label class="calculator_item" for="circle">
+                                <input name="calculator" class="calculator_button" id="circle" name="" type="radio">
+                                <span>Круг</span>
+                            </label>
+                            <label class="calculator_item" for="list">
+                                <input name="calculator" class="calculator_button" id="list" name="" type="radio">
+                                <span>Лист</span>
+                            </label>
+                            <label class="calculator_item" for="tube_circle">
+                                <input name="calculator" class="calculator_button" id="tube_circle" name="" type="radio">
+                                <span>Труба круглая</span> 
+                            </label>
+                            <label class="calculator_item" for="tube_profile">
+                                <input name="calculator" class="calculator_button" id="tube_profile" name="" type="radio">
+                                <span>Труба профильная</span> 
+                            </label>
+                            <label class="calculator_item" for="corner">
+                                <input name="calculator" class="calculator_button" id="corner" name="" type="radio">
+                                <span>Уголок</span>
+                            </label>
+                            <label class="calculator_item" for="channel">
+                                <input name="calculator" class="calculator_button" id="channel" name="" type="radio">
+                                <span>Швеллер</span>
+                            </label>
+                            <label class="calculator_item" for="hexahedron">
+                                <input name="calculator" class="calculator_button" id="hexahedron" name="" type="radio">
+                               <span> Шестигранник</span>
+                            </label>
+                        </div>
+                        <div class="calculator_wrap">
+                            <input type="text" placeholder="Диаметр, мм" name="" id="" class="calculator_value">
+                            <input type="text" placeholder="Длина, мм" name="" id="" class="calculator_value">
+                            <button class="btn_blue calculator_calc" id="calculate">Рассчитать</button>
+                        </div>
+                        <div class="calculator_img">
+                            <img src="images/dest/service/armatura.png" alt="armatura">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3 class="sample-title col-lg-12">Калькулятор металлопроката</h3>
+                <p class="sample-description col-lg-6">Калькулятор металлопроката – это универсальный онлайн помощник в расчетах, касающихся вашего заказа. При оформлении заказа вам может быть известна только необходимая вам масса, тогда необходимо будет искать длину изделия 
+                    или наоборот. Это займет некоторое время, но есть более простое решение, которое вам понравится – калькулятор металлопроката. 
+                    <br><br>
+                    Его вид – это эргономичная таблица, где отображаются лишь нужные параметры, 
+                    и с его помощью вы произведете все нужные расчеты за несколько минут. 
+                    Вы можете рассчитать недостающие параметры у труб круглой формы, труб 
+                    из профиля, арматуры, кругов, листов, уголков, швеллеров и шестигранников
+                </p>
+                <p class="sample-description col-lg-6">Рассчитать вес металлопроката на онлайн калькуляторе, зная параметры изделия очень просто и удобно. После всех подсчетов, за вами остается только выбор материала и его марки. 
+                    <br><br>
+                    Заказывайте качественный металлопрокат в компании «Сталь Эксперт» оптом 
+                    или в розницу, для уточнения стоимости интересующего вас товара обратитесь 
+                    к нашему консультанту.</p>
+                    
+            </div>
+        </div>
+    </section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer_logo col-lg-2">
+					<img src="images/dest/footer_logo.png" alt="">
+					<a href="#" class="footer_rights">© 2013-2020<br>
+						Все права защищены</a>
+				</div>
+				<div class="footer_navigation col-lg-6">
+					<div class="footer_nav ">
+						<a href="#" class="footer_link">Металлопрокат</a>
+						<a href="#" class="footer_link">Оцинковка</a>
+						<a href="#" class="footer_link">Нержавейка</a>
+					</div>
+					<div class="footer_nav ">
+						<a href="#" class="footer_link">Трубы</a>
+						<a href="#" class="footer_link">Листы</a>
+						<a href="calc.html" class="footer_link">Калькулятор</a>
+					</div>
+					<div class="footer_nav ">
+						<a href="#" class="footer_link">Цветной металл</a>
+						<a href="#" class="footer_link">Услуги</a>
+						<a href="company.html" class="footer_link">О компании</a>
+						<a href="gost.html" class="footer_link">ГОСТы и ТУ</a>
+					</div>
+					<div class="footer_nav ">
+						<a href="purchase.html" class="footer_link">Условия покупки</a>
+						<a href="#" class="footer_link">Оплата</a>
+						<a href="delivery.html" class="footer_link">Доставка</a>
+						<a href="contact.html" class="footer_link">Контакты</a>
+					</div>
+				</div>
+
+				<div class="footer_social col-lg-4">
+					<div class="footer_wrap">
+						<div class="footer_worktime">
+							Время работы
+							<span>Пн-пт: 08:30 — 18:00</span>
+						</div>
+						<div class="contact">
+							<a href="tel:88005008084" class="contact_phone"><i class="icon-call"></i>8 800 500-80-84</a>
+							<a href="mailto:steel@resourse.ru" class="contact_mail"><i
+									class="icon-email"></i>steel@resourse.ru</a>
+						</div>
+					</div>
+					<div class="footer_location">
+						Адрес Центрального офиса:
+						<span>105094 г. Москва,
+							Золотая ул., д. 13</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal-window" id="modal_price">
+		<div class="modal-wrap">
+		<div class="modal_dialog">
+			<h3 class="modal_title">Сделать заказ</h3>
+			<form action="#" class="form" method="POST">
+				<input type="text" class="form_inp" placeholder="Имя" name="name" required >
+				<input type="email" class="form_inp" placeholder="E-mail" name="email" required >
+				<input type="text" class="form_inp" placeholder="Телефон" name="phone"  >
+				<input type="text" class="form_inp" placeholder="Город" name="town" required >
+				<p class="form_description">
+					Укажите ваши данные — мы вышлем вам полный оптовый прайс на ваш e-mail.<br>
+					<br>
+				Письмо может упасть <span>в папку СПАМ</span> на вашей почте. Ваши данные не будут переданы третьим лицам!
+				</p>
+				<input type="submit" class="form_btn" value="Отправить">
+			</form>
+			<div class="close_modal">&#10005</div>
+		</div>
+		</div>	
+	</div>
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+.service
+    margin-bottom: 120px
+    margin-top: 70px
+    & .sample-title
+        margin-bottom: 70px 
+
+
+.catalog
+    display: flex
+    &_menu
+        width: 30%
+        display: flex
+        flex-direction: column
+        background-color: #E5F3F7
+        border-radius: 30px
+        padding: 32px 41px
+        align-self: baseline
+    &_link
+        padding-bottom: 15px
+        border-bottom: 1px solid rgba(0, 0, 0, 0.13)
+        margin-bottom: 18px
+        font-size: 18px
+        color: $black
+        transition: color .2s ease
+        &__active
+            color: #FF7867
+            font-weight: 700
+        &:last-child
+            border-bottom: none
+            padding-bottom: 0
+            margin-bottom: 0
+        &:hover
+            color: rgba(#FF7867, 0.9)
+    &_position
+        display: flex
+        width: 70%
+        align-content: flex-start
+        justify-content: space-around
+        flex-wrap: wrap
+    &_item
+        width: calc(33.3333333333% - 40px)
+        text-align: center
+        background-color: #F1F4F4
+        border-radius: 12px
+        overflow: hidden
+        margin-bottom: 24px
+        & img
+            margin: 64px 20px 28px 20px 
+            width: 196px
+            height: 76px
+        &:hover 
+            & .catalog_name
+                color: #ffffff
+                &::before,
+                &::after
+                    transform: translateX(0)
+    &_name
+        height: 66px
+        background-color: transparentize
+        align-self: center
+        line-height: 3.5
+        font-size: 18px
+        font-weight: 400
+        position: relative
+        transition: color .4s ease
+        &::before
+            content: ""
+            width: 100%
+            height: 100%
+            background-color: #2A9FB9
+            position: absolute
+            left: 0
+            z-index: 0
+            transition: transform .4s ease
+            transform: translateX(-700px)
+        &::after
+            content: ''
+            position: absolute
+            border: 20px solid transparent
+            border-top: 20px solid #FF7867
+            border-right: 20px solid #FF7867
+            right: 0
+            transform: translateX(100px)
+            transition: transform .4s ease
+        & span
+            position: relative
+            z-index: 3

@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'SteelResource';
+  src:  url('fonts/SteelResource.eot?ds82s6');
+  src:  url('fonts/SteelResource.eot?ds82s6#iefix') format('embedded-opentype'),
+    url('fonts/SteelResource.ttf?ds82s6') format('truetype'),
+    url('fonts/SteelResource.woff?ds82s6') format('woff'),
+    url('fonts/SteelResource.svg?ds82s6#SteelResource') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'SteelResource' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-beam:before {
+  content: "\e900";
+}
+.icon-call:before {
+  content: "\e901";
+}
+.icon-compass:before {
+  content: "\e902";
+  color: #ff7867;
+}
+.icon-delivery:before {
+  content: "\e903";
+}
+.icon-diamond:before {
+  content: "\e904";
+}
+.icon-email:before {
+  content: "\e905";
+}
+.icon-emblem:before {
+  content: "\e906";
+  color: #ff7867;
+}
+.icon-location:before {
+  content: "\e907";
+}
+.icon-next:before {
+  content: "\e908";
+}
+.icon-pdf:before {
+  content: "\e909";
+}
+.icon-prev:before {
+  content: "\e90a";
+}
+.icon-quality:before {
+  content: "\e90b";
+}
+.icon-search:before {
+  content: "\e90c";
+}
+.icon-stopwatch:before {
+  content: "\e90d";
+  color: #ff7867;
+}

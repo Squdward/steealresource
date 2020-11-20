@@ -1,0 +1,46 @@
+.purchase
+    & .sample-wrap
+        margin-bottom: 70px
+    &_title
+        font-weight: 700
+        font-size: 20px
+        margin-left: 20px
+        margin-bottom: 25px
+        position: relative
+        &::before
+            content: ""
+            width: 58px
+            height: 32px
+            border-radius: 23px
+            background-color: #E5F3F7
+            position: absolute
+            left: -20px
+            transform: rotate(45deg)
+            z-index: -1
+    &_step
+        margin-bottom: 35px
+    &_rightSide
+        & .purchase_step
+            margin-bottom: 60px
+    &_list
+        max-width: 470px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding-left: 20px
+        &_title
+            display: block
+            margin-bottom: 20px
+    &_pay
+        width: 225px
+        margin-bottom: 10px
+        position: relative
+        &::before
+            content: ""
+            width: 9px
+            height: 9px
+            background-color: #FF7867
+            border-radius: 50%
+            position: absolute
+            left: -20px
+            top: 3px
