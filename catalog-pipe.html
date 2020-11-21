@@ -70,7 +70,7 @@
 						</li>
 					</ul>
 				</nav>
-				<button class="btn_blue col-lg-2 col-md-6 col-9">Сделать заказ</button>
+				<a href="#modal_price"  class="btn_blue col-lg-2 col-md-6 col-9">Сделать заказ</a>
 				<div class="contact col-lg-2 col-md-2 col-1">
 					<a href="tel:88005008084" class="contact_phone"><i class="icon-call"></i>8 800 500-80-84</a>
 					<a href="mailto:steel@resourse.ru" class="contact_mail"><i
@@ -142,9 +142,9 @@
                     <a href="#" class="catalog_link catalog_link__active">Труба прямошовная</a>
                 </div>
                 <div class="catalog_position">
-                    <div class="catalog_item">
+                    <a href="catalog-product.html" class="catalog_item">
                         <img src="images/dest/service/pipe.png" alt="pipe">
-                    </div>
+                    </a >
                 </div>
             </div>
             </div>
@@ -227,26 +227,20 @@
 			</div>
 		</div>
 	</footer>
-	<div class="modal-window" id="modal_price">
-		<div class="modal-wrap">
-		<div class="modal_dialog">
-			<h3 class="modal_title">Сделать заказ</h3>
-			<form action="#" class="form" method="POST">
-				<input type="text"  class="form_inp" placeholder="Имя" name="name" required >
-				<input type="email" class="form_inp" placeholder="E-mail" name="email" required >
-				<input type="text" class="form_inp" placeholder="Телефон" name="phone"  >
-				<input type="text" class="form_inp" placeholder="Город" name="town" required >
-				<p class="form_description">
-					Укажите ваши данные — мы вышлем вам полный оптовый прайс на ваш e-mail.<br>
-					<br>
-				Письмо может упасть <span>в папку СПАМ</span> на вашей почте. Ваши данные не будут переданы третьим лицам!
-				</p>
-				<input type="submit" class="form_btn" value="Отправить">
-			</form>
-			<div class="close_modal">&#10005</div>
-		</div>
-		</div>	
-	</div>
+	<div class="modal_dialog mfp-hide" id="modal_price">
+		<h3 class="modal_title">Сделать заказ</h3>
+		<form action="#" class="form" id="form" method="POST">
+			<input type="text" class="form_inp" placeholder="Имя" name="name" required >
+			<input type="email" class="form_inp" placeholder="E-mail" name="email" required >
+			<input type="text" class="form_inp" placeholder="Телефон" name="phone"  >
+			<input type="text" class="form_inp" placeholder="Город" name="town" required >
+			<p class="form_description">
+				Укажите ваши данные — мы вышлем вам полный оптовый прайс на ваш e-mail.<br>
+				<br>
+			Письмо может упасть <span>в папку СПАМ</span> на вашей почте. Ваши данные не будут переданы третьим лицам!
+			</p>
+			<input type="submit" class="form_btn" value="Отправить">
+		</form>
     <script src="js/app.min.js"></script>
 
 </body>

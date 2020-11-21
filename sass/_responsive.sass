@@ -116,6 +116,7 @@
     .office
         & .sample-img
             top: -15px
+            right: -8.5vw
     // ======CONTACT======
 
     // ======Calculate======
@@ -171,7 +172,7 @@
             &:first-child
                 padding-top: 25px
         & .btn_blue
-            order: 5 
+            order: 5
             margin-top: 30px
         &_search
             order: 1
@@ -231,6 +232,7 @@
         &_item
         &_text
             margin: 0
+            padding: 0px 9px
         &_img
             width: 600px
             right: 0px
@@ -253,12 +255,12 @@
     .about
         & .sample_img
             width: 500px
-            margin: 63px auto auto auto
+            margin: 63px auto 99px auto
             &::before
                 height: 110%
                 width: 100%
                 right: -48px
-                top: -26px
+                top: -16px
             & img
                 width: 100%
     .footer
@@ -315,16 +317,24 @@
             top: 20px
             right: 50px
     // ====== aboutUs======
-
+        
+    // ====== Vacansy======
     // ====== Vacansy======
 
-    .work_contact
-        margin-top: 36px    
-        margin-bottom: 0
-        &:first-child
-            margin-top: 60px 
-        &:last-child
-            margin-bottom: 120px
+    // ====== Vacansy======
+    .work
+        &_contact
+            margin-top: 36px    
+            margin-bottom: 0
+            &:first-child
+                margin-top: 60px 
+            &:last-child
+                margin-bottom: 120px
+        & .sample-img
+            z-index: -1
+            opacity: 0.2
+            right: -14vw
+
     // ====== Vacansy======
 
     // ======Production======
@@ -334,14 +344,19 @@
             position: absolute
             right: -300px
             top: 0
+        & .sample_img
+            margin-top: 0px
+            margin-bottom: 0px
     // ======Production======
 
     // ======CONTACT======
     #office
         & .sample-img
             top: -15px
-            width: auto
-            margin-right: -40px
+            width: 700px
+            margin-right: -30vw
+            display: block
+            position: static
     .office
         &_info
             flex-direction: column
@@ -359,7 +374,13 @@
             & a
                 margin-bottom: 25px
         &_wrap
-            margin-bottom: 100px    
+            margin-bottom: 100pxpx
+        & .sample-wrap
+            margin-bottom: 0px
+            flex-direction: column
+        &_map
+            margin-top: 50px
+            margin-bottom: 50px
     // ======CONTACT======
 
     // ======Calculate======   
@@ -381,17 +402,47 @@
             & img
                 width: auto
                 height: auto
+        &_params
+            margin-left: 30px
+    .calc
+        & .sample-description
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 100px
+        & .sample-title
+            margin-bottom: 40px
 
     // ======Calculate======
 
 
     // ======SORT======
     .gost
+        &_wrap
+            margin-bottom: 0px
         &_item
             width: calc(50% - 30px)
-    // ======SORT======
+        & .form_title
+            margin-top: 50px
+     
+    .sort
+        & .gost_list
+           margin-bottom: 50px
+        & .form_title
+           margin-top: 60px
 
-    // ====== Delivery======
+    // ======SORT======
+    .catalog-pipe
+        & .catalog
+            &_menu
+                width: 95%
+            &_position
+                width: 100%
+                justify-content: space-between
+            &_item
+                width: calc(50% - 40px)
+                margin-left: 0
+
+        // ====== Delivery======
     .delivery
         & .sample-wrap
             & .sample-img
@@ -450,6 +501,10 @@
             margin-top: 30px
         &_item
             width: calc( 50% - 10px  )
+    .footer
+        &_location
+            margin-bottom: 80px
+            margin-top: 0px
     // ====== Company======
     .sample-wrap
         display: block
@@ -460,6 +515,7 @@
             margin-left: auto
             margin-right: -20px
     .primary
+        margin-bottom: 70px
         .sample_img
             &::before
                 right: -10px
@@ -468,6 +524,28 @@
 
     // ====== Company======
 
+    .production
+        text-align: center
+        &_advantage
+            padding: 0px 15px
+        &_rightSide
+            order: 3
+        &_leftSide,
+        &_rightSide
+            flex-wrap: wrap
+            margin: 0
+            text-align: left
+            justify-content: center
+        &_item
+            margin-bottom: 35px
+            width: 100%
+            text-align: center
+        &_title
+            font-size: 25px
+            margin-top: 60px
+            text-align: center
+        &_center
+            margin: 60px 0px
     // ====== VACANSY ======
     
     .work
@@ -477,38 +555,64 @@
             position: absolute
             top: 95px
             width: 500px
+            opacity: 1
+            right: -5vw
         &_list
             margin-top: 0px
             margin-bottom: 30px
+        & .sample_decoration
+            left: 0
     // ====== VACANSY ======
 
     // ======SORT======
     .gost
+        &_wrap
+            justify-content: space-between
+        &_standart
+            margin-right: 0
         &_item
             width: calc(100% - 15px)
             margin-left:  auto
             margin-right:  auto
+        & .sample-text
+            padding-left: 10px
+            padding-right: 10px
     // ======SORT======
 
-
+    .catalog-about
+        margin-bottom: 127px
     // ====== Catalog-pipe======
     .catalog-pipe
         & .catalog
             padding: 0
             &_menu
                 width: 100%
-                padding-left: 5px
+                padding-left: 15px
                 padding-right: 0
                 border-radius: 0
             &_position
                 width: 100%
-                justify-content: flex-start
             &_item
                 margin-left: 0
+                margin-bottom: 20px
+                display: flex
+                justify-self: center
+                align-items: center
+                & img 
+                    width: 100%
+                    height: auto
+                    margin: 0
+        & .sample-title
+            margin-bottom: 40px
     // ====== Catalog-pipe======
     
     
 @media screen and ( max-width: 576px)
+    .form
+        padding: 60px 10px 35px 10px
+        &_title
+            font-size: 25px
+            padding: 0px 9px
     .body_modal
         overflow: auto
         position: relative
@@ -535,18 +639,34 @@
             & span
                 font-size: 36px
         &_img
-            top: 0
+            top: 70px
             left: -120px
             width: 670px
         & .sample_decoration
             top: 0
             font-size: 140px
             left: 120px
+    .sample-subtitle
+        font-size: 20px
+    .about
+        & .sample-title
+            margin-bottom: 50px
+            padding: 0 5px
+        &_txt
+            padding: 0 8px
     .catalog
         &_item
             width: 95%
+    .service
+        & .sample-title     
+            margin-bottom: 50px 
+            font-size: 24px
 
     // ====== Company======
+    .aboutUs
+        & .sample-wrap 
+            & .sample-img
+                margin-left: auto
     .page-title
         font-size: 41px !important
     .aboutUs
@@ -562,6 +682,10 @@
             margin-left: -30px
     .sample_decoration
         font-size: 120px!important
+    .primary
+        margin-bottom: 0
+        & .sample-title
+            margin-bottom: 30px
     // ====== Company======
 
 
@@ -584,23 +708,6 @@
             width: 550px
             margin-left: -122px
             margin-top: 50px
-    .production
-        &_advantage
-            padding: 0px 15px
-        &_rightSide
-            order: 3
-        &_leftSide,
-        &_rightSide
-            flex-wrap: wrap
-            margin: 0
-            text-align: left
-        &_item
-            margin-bottom: 35px
-        &_title
-            font-size: 25px
-            text-align: left
-        &_center
-            margin: 60px 0px
         & .sample_img
             margin: 0
             &::before
@@ -608,6 +715,12 @@
                 height: 120%
             & img
                 width: 100%
+    .production
+        & .sample-wrap
+            text-align: left
+            text-align-last: left
+            & .page-description
+                max-width: none
         
     // ====== PRODUCTION======
 
@@ -619,6 +732,9 @@
     .gost
         & .sample-title
             font-size: 25px
+        &_wrap
+            flex-direction: column
+
     // ====== gost======
     .calculator
         &_head
@@ -628,14 +744,35 @@
    
     // ====== catalog======
     .catalog-about
+        & .row
+            &:first-child
+                padding: 0px 8px
         & .sample_img 
-            margin-bottom: 50px
+            padding: 0
+            margin-bottom: 0
             &::before   
                 height: 116%
                 top: -23px
-
     .about_txt 
        padding: 0px 8px
+    .catalog-pipe
+        & .catalog
+            margin-bottom: 80px
+            &_menu
+                padding-left: 9px
+            &_position
+                justify-content: space-around
+            &_item
+                width: 90%
+                & img 
+                    width: auto
+                    margin: 0 auto
+            &-title
+                margin-bottom: 50px
+        & .form_title
+            margin-top: 70px
+            margin-bottom: 40px
+    
     // ====== catalog======
 
     // ====== Delivery======
@@ -652,7 +789,9 @@
 
     // ====== Delivery======
     // ====== Delivery======
-    
+@media screen and ( min-width: 440px) and (max-width: 576px)
+   .sample-img
+       margin-left: auto!important 
 @media screen and ( max-width: 360px)
     .header
         &_search
@@ -690,6 +829,13 @@
         & .sample-img
             margin-left: -80px
     // ====== Company======
+
+
+    .aboutUs
+        & .sample-wrap
+            & .sample-img
+                margin-left: -40px
+
 
     // ====== VACANSY======
     .work

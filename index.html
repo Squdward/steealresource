@@ -33,7 +33,7 @@
 						</li>
 						<li>
 							<a href="#" class="navigation_links">Оцинковка</a>
-						</li>
+						</li>	
 						<li>
 							<a href="#" class="navigation_links">Цветной металл</a>
 						</li>
@@ -70,7 +70,7 @@
 						</li>
 					</ul>
 				</nav>
-				<button class="btn_blue col-lg-2 col-md-6 col-9">Сделать заказ</button>
+				<a  href="#modal_price" class="btn_blue col-lg-2 col-md-6 col-9">Сделать заказ</a>
 				<div class="contact col-lg-2 col-md-2 col-1">
 					<a href="tel:88005008084" class="contact_phone"><i class="icon-call"></i>8 800 500-80-84</a>
 					<a href="mailto:steel@resourse.ru" class="contact_mail"><i
@@ -128,7 +128,7 @@
 							<span>Металлопроката</span>
 							по лучшим ценам
 						</h3>
-						<button class="btn_blue">Подробнее</button>
+						<a  class="btn_blue">Подробнее</a>
 					</div>
 					<div class="slider_img">
 						<img src="images/dest/slider/1.png" alt="">
@@ -142,7 +142,7 @@
 							<span>Металлопроката</span>
 							по лучшим ценам
 						</h3>
-						<button class="btn_blue">Подробнее</button>
+						<a href="#modal_price"  class="btn_blue">Подробнее</a>
 					</div>
 					<div class="slider_img">
 						<img src="images/dest/slider/1.png" alt="">
@@ -156,7 +156,7 @@
 							<span>Металлопроката</span>
 							по лучшим ценам
 						</h3>
-						<button class="btn_blue">Подробнее</button>
+						<a href="#modal_price" class="btn_blue">Подробнее</a>
 					</div>
 					<div class="slider_img">
 						<img src="images/dest/slider/1.png" alt="">
@@ -183,7 +183,7 @@
 				<div class="catalog col-lg-12">
 					<div class="catalog_menu">
 						<a href="#" class="catalog_link">Сортовой металлопрокат</a>
-						<a href="#" class="catalog_link catalog_link__active">Трубы</a>
+						<a href="catalog-pipe.html" class="catalog_link catalog_link__active">Трубы</a>
 						<a href="#" class="catalog_link">Листовой металлопрокат</a>
 						<a href="#" class="catalog_link">Качественные стали</a>
 						<a href="#" class="catalog_link">Оцинкованная сталь</a>
@@ -194,30 +194,30 @@
 						<a href="#" class="catalog_link">Услуги</a>
 					</div>
 					<div class="catalog_position">
-						<div class="catalog_item">
+						<a href="#" class="catalog_item">
 							<img src="images/dest/service/armatura.png" alt="armatura7">
 							<div class="catalog_name"> <span>Арматура</span></div>
-						</div>
-						<div class="catalog_item">
+						</a href="#">
+						<a href="#" class="catalog_item">
 							<img src="images/dest/service/beam.png" alt="beam">
 							<div class="catalog_name"> <span>Балка</span></div>
-						</div>
-						<div class="catalog_item">
+						</a href="#">
+						<a href="#" class="catalog_item">
 							<img src="images/dest/service/strip.png" alt="strip">
 							<div class="catalog_name"> <span>Полоса</span></div>
-						</div>
-						<div class="catalog_item">
+						</a href="#">
+						<a href="#" class="catalog_item">
 							<img src="images/dest/service/circle.png" alt="circle">
 							<div class="catalog_name"> <span>Круг</span></div>
-						</div>
-						<div class="catalog_item">
+						</a href="#">
+						<a href="#" class="catalog_item">
 							<img src="images/dest/service/corner.png" alt="corner">
 							<div class="catalog_name"> <span>Уголок стальной</span></div>
-						</div>
-						<div class="catalog_item">
+						</a href="#">
+						<a href="#" class="catalog_item">
 							<img src="images/dest/service/channel.png" alt="channel">
 							<div class="catalog_name"> <span>Швеллер</span></div>
-						</div>
+						</a href="#">
 					</div>
 				</div>
 			</div>
@@ -314,9 +314,9 @@
 			</div>
 		</div>
 	</footer>
-	<div class="modal-window" id="modal_price">
-		<div class="modal-wrap">
-		<div class="modal_dialog">
+	
+
+		<div class="modal_dialog mfp-hide" id="modal_price">
 			<h3 class="modal_title">Сделать заказ</h3>
 			<form action="#" class="form" id="form" method="POST">
 				<input type="text" class="form_inp" placeholder="Имя" name="name" required >
@@ -330,9 +330,7 @@
 				</p>
 				<input type="submit" class="form_btn" value="Отправить">
 			</form>
-			<div class="close_modal">&#10005</div>
-		</div>
-		</div>	
+
 	</div>
 	<script src="js/app.min.js"></script>
 
