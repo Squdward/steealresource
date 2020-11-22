@@ -21,6 +21,8 @@
                     border-radius: 7px
         &_search
             text-align: right
+        &_loop
+            left: 30%
         & .search
             width: 70%
     .catalog
@@ -137,12 +139,13 @@
         height: auto
         z-index: 999
         color: #ffffff
-        background-color: rgba(#14161F, 0.96)
+        background-color: rgba(#14161F, 0.98)
         align-items: flex-start
         flex-direction: column
-        min-height: 792px
-        transform: translateY(-900px)
-        transition: transform .6s ease
+        min-height: 842px
+        transform: translateX(900px)
+        transition: transform .6s ease-out
+        height: 100vh
         &_list
             margin-top: 30px
             flex-direction: column  
@@ -156,7 +159,7 @@
         &_bottom
             display: none
         &_open
-            transform: translateY(0px)
+            transform: translateX(0px)
     .header
         background: #ffffff
         position: relative
@@ -174,6 +177,8 @@
         & .btn_blue
             order: 5
             margin-top: 30px
+        &_loop
+            left: 0
         &_search
             order: 1
             margin-top: 0
@@ -200,9 +205,10 @@
                     bottom: 0
             &_open
                 position: absolute
-                right: 40px
-                top: 40px
+                right: 25px
+                top: 25px
                 z-index: 999999
+    
                 & span
                     background-color: #ffffff
                     transition: transform .6s ease
@@ -488,7 +494,9 @@
                 width: 100%
                 display: none
         &_loop
-            display: block
+            font-size: 20px
+            position: static
+            color: #000000
         & .burger-wrap
             margin-left: 15px
     .catalog
@@ -618,6 +626,11 @@
         position: relative
     .modal_dialog
         border-radius: 0
+        & .mfp-close
+            font-size: 33px
+            right: 10px
+            top: 15px
+
     .header
         & .logo
             margin-right: 15px

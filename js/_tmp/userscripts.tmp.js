@@ -15,7 +15,7 @@ $(document).ready(function () {
     nextArrow: $(".slider_next"),
     prevArrow: $(".slider_prev"),
     swipeToSlide: true,
-    draggable: false,
+    draggable: true,
     swipe: true
   });
 
@@ -24,26 +24,11 @@ $(document).ready(function () {
     $(".slider_all").html(slick.slideCount);
   }
 
-  $("#form_upload").change(function () {
-    $(".form_filename").html(this.files[0].name);
-  });
   $(".btn_blue").magnificPopup({
     type: 'inline',
-    focus: ".form_inp"
-  }); // $(".btn_blue").on("click", function(e) {
-  // 	let modal = $("#modal_price");
-  // 	modal.toggleClass("modal-window_open")
-  // 	$("body").toggleClass("body_modal")
-  // 	modal.on("click", function(e) {
-  // 		if(e.target == modal[0]) {
-  // 			close(".modal-window_open", "modal-window_open")
-  // 		}
-  // 		else if($(e.target).hasClass("close_modal")) {
-  // 			close(".modal-window_open", "modal-window_open")
-  // 		}
-  // 	})
-  // })
-
+    focus: ".form_inp",
+    closeMarkup: '<button title="%title%" type="button" class="mfp-close">&#10006</button>'
+  });
   $(".header_burger").on("click", function () {
     $(".navigation").toggleClass("navigation_open");
     $(".header_burger").toggleClass("header_burger_open");
